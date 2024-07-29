@@ -42,7 +42,7 @@ public class VendaController {
     }
 
     @DeleteMapping()
-    public ResponseEntity<?> deletarVenda(@PathVariable(name = "id") Long id) { //nao precisa de espaco no pathvariable
+    public ResponseEntity<?> deletarVenda(@PathVariable(name = "id") Long id) { 
         vendaService.deletarVenda(id);
         return new ResponseEntity<>("", HttpStatus.OK);
     }
